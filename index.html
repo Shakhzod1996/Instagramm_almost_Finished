@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Instagram</title>
+  <!-- ?Swiper Js ---------------->
+  <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css" />
+  <!-- ?Box Icon ------------------->
+  <link href='https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css' rel='stylesheet'>
+
+  <!-- ?Local Css -->
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <!-- ?Header ----------------->
+  <header>
+    <div class="container">
+      <div class="header-inside">
+        <img class="logo" src="img/logo.jpg" alt="logo">
+        <div class="header-rightside">
+          <input type="search" class="main-input" placeholder="Search">
+
+          <div class="right-main-icons">
+            <i class='bx bx-home-alt-2'></i>
+            <i class='bx bx-message-square-detail'></i>
+            <i class='bx bx-message-square-add'></i>
+            <i class='bx bx-compass'></i>
+            <i class='bx bx-heart'></i>
+            <img class="shax-img" src="img/shax.jpg" alt="img">
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- ?Main Profile  ---------------->
+  <div class="main-profile">
+    <div class="container">
+      <div class="profile-grid">
+        <div class="profile-left">
+          <div class="img-back-red">
+            <img class="second-img-shax" src="img/shax.jpg" alt="img">
+          </div>
+        </div>
+
+        <div class="profile-right">
+          <div class="right-head-profile-flex">
+            <h3 class="shax-h2">shaxzod.muradov</h3>
+            <button class="btn-f f1 "><a href="#" class="message-btn">Message</a></button>
+            <button class="btn-f f2 "><a href="#" class="follow2">Follow</a></button>
+            <button class="btn-f f3 "><a href="#" class="arr-down"><i class='bx bx-chevron-down'></i></a></button>
+            <button class="btn-f f4 "><a href="#"><i class='bx bx-dots-horizontal-rounded'></i></a></button>
+          </div>
+
+          <div class="post-folows">
+            <p><a href="#">1, 042</a> posts</p>
+            <p><a href="#">104k</a> followers</p>
+            <p><a href="#">5</a> followings</p>
+          </div>
+
+          <div class="education">
+            <h4>Najot Ta'lim</h4>
+            <span>Education</span>
+            <a href="#">💡 Zamonaviy Kasblar</a>
+            <p>👉 PortFoliomga O'ting</p>
+            <a class="port" target="_blank" href="https://webtec.uz/">https://webtec.uz/</a>
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ?Slider main container -->
+  <div class="container">
+    <div class="swiper">
+      <!-- Additional required wrapper -->
+      <div class="swiper-wrapper">
+        <!-- Slides -->
+        <div class="swiper-slide">
+          <div class="slide-div"><img src="img/slide1.jpg" alt="img"></div>
+          <p>Dasturlash</p>
+        </div>
+        <div class="swiper-slide">
+          <div class="slide-div"><img src="img/slide2.jpg" alt="img"></div>
+          <p>Kitoblar</p>
+        </div>
+        <div class="swiper-slide">
+          <div class="slide-div"><img src="img/slide3.jpg" alt="img"></div>
+          <p>Daftarlar</p>
+        </div>
+        <div class="swiper-slide">
+          <div class="slide-div"><img src="img/slide4.jpg" alt="img"></div>
+          <p>Ruchkalar</p>
+        </div>
+        <div class="swiper-slide">
+          <div class="slide-div"><img src="img/slide5.jpg" alt="img"></div>
+          <p>Odamlar</p>
+        </div>
+        <div class="swiper-slide">
+          <div class="slide-div"><img src="img/slide6.webp" alt="img"></div>
+          <p>Yayvonlar</p>
+        </div>
+        <div class="swiper-slide">
+          <div class="slide-div"><img src="img/slide8.jpg" alt="img"></div>
+          <p>Mashinalar</p>
+        </div>
+        <div class="swiper-slide">
+          <div class="slide-div"><img src="img/slide8.webp" alt="jpg"></div>
+          <p>Yangiliklar</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ?Post Buttons --------------->
+  <div class="container">
+    <hr class="second-hr">
+    <div class="post-btns">
+      <button class="p-btn post-btn" onclick="PostShow()">POSTS</button>
+      <button class="p-btn video-btn">VIDEOS</button>
+      <button class="p-btn saved-btn" onclick="savedMes()">SAVED</button>
+    </div>
+  </div>
+
+
+
+  <!-- ?Main Ul card Container ------>
+  <div class="container">
+    <ul class="ul">
+    </ul>
+
+    <ul class="saved-messages-ul">
+    </ul>
+  </div>
+  <div class="modal"></div>
+  <div class="modal-back"></div>
+
+  <!-- ?Swiper JS --------------->
+  <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
+  <!-- ?Local JS ---------------->
+  <script src="main.js"></script>
+</body>
+
+</html>
